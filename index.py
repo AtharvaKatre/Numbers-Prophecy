@@ -595,14 +595,15 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],meta_tags=[{'
 app.title = 'Numbers Prophecy'
 
 app.layout = dbc.Container([
-    html.Br(),
     dbc.Row(
-        dbc.Col(html.H2(html.B("Numbers Prophecy"),
+        dbc.Col(html.H3(html.B("Numbers Prophecy"),
                                className='text-center mt-4',
-                               style={'color': 'Yellow', 'text-decoration': 'None'})
+                               style={'color': 'Yellow', 'text-decoration': 'None','font-family':'Times'})
                 ),
     ),
-    html.Br(),
+    dbc.Row(
+        dbc.Col(html.P(["by ",html.A("Atharva Katre",href="https://linktr.ee/AtharvaKatre",style={'color':'white','text-decoration':'underline'})],className='text-center',style={'color':'#b4b4b4'}))
+        ),
     html.Br(),
     html.Br(),
     html.Br(),
@@ -612,14 +613,14 @@ app.layout = dbc.Container([
         )
     ),
     html.Br(),
-    dbc.Row(html.H4(["But the world we observe and experience around us is influenced by our actions and our interactions with it. And studies have shown than human behaviour isn't random. But wait ",html.A("What is Random?",href="https://youtu.be/9rIy0xY99a0",target='_blank',style={'text-decoration':'underline'})," and ",html.A("What is Not Random?",href='https://youtu.be/sMb00lz-IfE',target='_blank',style={'text-decoration':'underline'})],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
+    dbc.Row(html.H4(["But the world we observe and experience around us is influenced by our actions and our interactions with it. And studies have shown that human behaviour isn't random. But wait ",html.A("What is Random?",href="https://youtu.be/9rIy0xY99a0",target='_blank',style={'text-decoration':'underline'})," and ",html.A("What is Not Random?",href='https://youtu.be/sMb00lz-IfE',target='_blank',style={'text-decoration':'underline'})],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
     dbc.Row(html.H4(["Researchers have found that out that our languages, information, technological advancements and even natural phenomena follow obscure patterns."],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
     html.Br(),
     dbc.Row(html.H4(["This is an experiment to demonstrate the ",html.Span("biases",style={'color':'white'})," and ",html.Span("predictability",style={'color':'white'})," of our world."],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Benford's Law"),style={'color':'Yellow','text-decoration':'underline','padding-left':'10px'}),
+    dbc.Row(html.H3("Benford's Law"),style={'font-family':'Times','color':'Yellow','text-decoration':'underline','padding-left':'10px'}),
     html.Br(),
     dbc.Row(html.H5('Imagine a large dataset, say something like a list of every country and its population.'),style={'color':'#b4b4b4','padding-left':'20px','textAlign':'left'}),
     dbc.Table([html.Thead(html.Tr([html.Th("Country"), html.Th("Popultion")]))] + [html.Tbody([
@@ -688,7 +689,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Zipf's Law"), style={'color': 'Yellow', 'text-decoration': 'underline','padding-left':'10px'}),
+    dbc.Row(html.H3("Zipf's Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline','padding-left':'10px'}),
     html.Br(),
     dbc.Row(html.H5(["Named for linguist George Kingsley Zipf, who around 1935 was the first to draw attention to this phenomenon, the law examines the frequency of words in natural language and how the most common word occurs ",html.Span('twice',style={'color':'white'})," as often as the second most frequent word, ",html.Span('thrice',style={'color':'white'})," as often as the third most frequent word and so on until the least frequent word."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["So the word in the position ,",html.Span('n',style={'color':'white'})," appears ",html.Span("1/n",style={'color':'white'})," times as often as the most frequent one."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -808,7 +809,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Brevity Law"), style={'color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Brevity Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
     html.Br(),
     dbc.Row(html.H5(["Also called as Zipf's law of abbreviation, it qualitatively states that the ",html.Span('more',style={'color':'white'})," frequently a word is used, the ",html.Span('shorter',style={'color':'white'})," that word tends to be, and vice versa."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["As shown in the graph below a few shorter words are used more often than many other longer words."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -846,7 +847,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Titius–Bode Law"), style={'color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Titius–Bode Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
     html.Br(),
     dbc.Row(html.H5(["The Titius–Bode law, first announced in 1766 by Johann Daniel Titius but was popularized only from 1772 by Johann Elert Bode is a formulaic prediction of spacing between planets in any given solar system."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["The formula suggests that, extending outward, each planet should be approximately ",html.Span("twice",style={'color':'white'})," as far from the Sun as the ",html.Span("one before",style={'color':'white'}),". The hypothesis correctly anticipated the orbits of Ceres in 1801 (in the asteroid belt) and Uranus in 1781, but failed as a predictor of Neptune's orbit in 1846 and that of Pluto, which was regarded as the ninth planet when it was discovered in 1930."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -874,7 +875,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Moore's Law"),style={'color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Moore's Law"),style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
     html.Br(),
     dbc.Row(html.H5(["In 1994 Intel released Intel 4004 is a 4-bit CPU, the first commercially produced microprocessor. It was also the first logic circuit integrated in one chip using MOS (metal–oxide–semiconductor) silicon gate technology. The IC had ", html.Span("2,250",style={'color':'white'})," MOS transistors. Fast forward to 2017 AMD launched EPYC Rome a 64-bit microprocessor with an astonishing ", html.Span("39.5 Billion",style={'color':'white'})," transistors."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["Named after Gordan Moore, co-founder and chairman of Intel Corporation, Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) ", html.Span("doubles",style={'color':'white'})," about every ",html.Span("two",style={'color':'white'})," years."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -919,7 +920,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Stigler's law of Eponymy"), style={'color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Stigler's law of Eponymy"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px','textAlign':'left'}),
     html.Br(),
     dbc.Row(html.H5(["This law isn't a scientific discovery or a prediction of any kind but in fact emphasises on human nature and how collaborative and complex the processes of scientific discovery really are."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["Stigler's Law tells us ",html.Span('''"No scientific discovery is named after its original discoverer."''',style={'color':'white'})],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -1801,7 +1802,7 @@ def update_graph(n,type_chosen):
             soup2 = BeautifulSoup(res2.content, "html.parser")
             book_title = soup2.find("h1", itemprop="name").text
 
-            book_words = pd.DataFrame(str(soup).split(), columns=['word'])
+            book_words = pd.DataFrame(str(soup).lower().split(), columns=['word'])
             book_word_count = len(book_words)
             book_words['word'] = book_words['word'].apply(
                 lambda x: None if x in [",", ".", "``", "''", ";", "?", "--", "(", ")", ":", "!", '''"''', "'"] else x)
@@ -1860,7 +1861,7 @@ def update_graph(n,type_chosen):
         soup2 = BeautifulSoup(res2.content, "html.parser")
         book_title = soup2.find("h1", itemprop="name").text
 
-        book_words = pd.DataFrame(str(soup).split(), columns=['word'])
+        book_words = pd.DataFrame(str(soup).lower().split(), columns=['word'])
         book_word_count = len(book_words)
         book_words['word'] = book_words['word'].apply(
             lambda x: None if x in [",", ".", "``", "''", ";", "?", "--", "(", ")", ":", "!", '''"''', "'"] else x)
