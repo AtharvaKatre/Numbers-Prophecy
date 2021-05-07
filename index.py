@@ -98,7 +98,7 @@ stars_distance['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.
 stars_distance['benford count'] = stars_distance['benford percentage'].apply(lambda x : (float(x) * sum(stars_distance['count']))/100)
 
 #pornhub views
-porn_views = pd.read_csv(os.getcwd()+'/assets/datasets/pornhub_views.csv')
+porn_views = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/pornhub_views.csv')
 porn_views_table = pd.DataFrame({'Total Records': [str(len(porn_views))], 'Maximum Value': [porn_views['views'].max()],
                          'Minimum Value': [porn_views['views'].min()],'Order of Magnitude':[len(str(porn_views['views'].max()))-len(str(porn_views['views'].min()))]})
 porn_views['views'] = porn_views['views'].apply(lambda x: str(x)[0])
@@ -123,7 +123,7 @@ countries_population['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5
 countries_population['benford count'] = countries_population['benford percentage'].apply(lambda x : (float(x) * sum(countries_population['count']))/100)
 
 # mass of exoplanets
-exoplanet_mass = pd.read_csv(os.getcwd()+'/assets/datasets/exoplanet_mass.csv').drop('exoplanet',axis=1)
+exoplanet_mass = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/exoplanet_mass.csv').drop('exoplanet',axis=1)
 exoplanet_mass_table = pd.DataFrame({'Total Records': [str(len(exoplanet_mass))], 'Maximum Value': [exoplanet_mass['mass'].max()],
                          'Minimum Value': [exoplanet_mass['mass'].min()],'Order of Magnitude':[len(str(exoplanet_mass['mass'].max()))-len(str(exoplanet_mass['mass'].min()))]})
 exoplanet_mass.columns = ['Digits']
@@ -136,7 +136,7 @@ exoplanet_mass['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.
 exoplanet_mass['benford count'] = exoplanet_mass['benford percentage'].apply(lambda x : (float(x) * sum(exoplanet_mass['count']))/100)
 
 # runs scored
-cricket_stats = pd.read_csv(os.getcwd()+'/assets/datasets/ICC Test Batting Figures.csv', encoding= 'unicode_escape')
+cricket_stats = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/ICC%20Test%20Batting%20Figures.csv', encoding= 'unicode_escape')
 cricket_stats_table = pd.DataFrame({'Total Records': [str(len(cricket_stats))], 'Maximum Value': [cricket_stats['Runs'].max()],
                          'Minimum Value': [cricket_stats['Runs'].min()],'Order of Magnitude':[len(str(cricket_stats['Runs'].max()))-len(str(cricket_stats['Runs'].min()))]})
 cricket_runs = cricket_stats
@@ -147,7 +147,7 @@ cricket_runs['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1,
 cricket_runs['benford count'] = cricket_runs['benford percentage'].apply(lambda x : (float(x) * sum(cricket_runs['count']))/100)
 
 # deaths due to terrorism
-terrorism_deaths = pd.read_csv(os.getcwd()+'/assets/datasets/Deaths_due_to_terrorism.csv')
+terrorism_deaths = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/Deaths_due_to_terrorism.csv')
 terrorism_deaths.columns = ['deaths']
 terrorism_deaths_table = pd.DataFrame({'Total Records':[len(terrorism_deaths)],'Maximum Value':[terrorism_deaths['deaths'].max()],'Minimum Value':[terrorism_deaths['deaths'].min()],'Order of Magnitude':[len(str(terrorism_deaths['deaths'].max()))-len(str(terrorism_deaths['deaths'].min()))]})
 terrorism_deaths['deaths'] = terrorism_deaths['deaths'].apply(lambda x: str(x)[0])
@@ -157,7 +157,7 @@ terrorism_deaths['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 
 terrorism_deaths['benford count'] = terrorism_deaths['benford percentage'].apply(lambda x : (float(x) * sum(terrorism_deaths['count']))/100)
 
 # movies revenue
-movie_revenue = pd.read_csv(os.getcwd()+'/assets/datasets/movie_revenue.csv')
+movie_revenue = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/movie_revenue.csv')
 movie_revenue_table = pd.DataFrame({'Total Records':[len(movie_revenue)],'Maximum Value':[movie_revenue['Digits'].max()],'Minimum Value':[movie_revenue['Digits'].min()],'Order of Magnitude':[len(str(movie_revenue['Digits'].max()))-len(str(movie_revenue['Digits'].min()))]})
 movie_revenue['Digits'] = movie_revenue['Digits'].apply(lambda x: str(x)[0])
 movie_revenue = movie_revenue['Digits'].value_counts().rename('count').rename_axis('Digits').reset_index()
@@ -167,7 +167,7 @@ movie_revenue['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1
 movie_revenue['benford count'] = movie_revenue['benford percentage'].apply(lambda x : (float(x) * sum(movie_revenue['count']))/100)
 
 # moon craters
-moon_craters = pd.read_csv(os.getcwd()+'/assets/datasets/moon_craters.csv')
+moon_craters = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/moon_craters.csv')
 moon_craters_table = pd.DataFrame({'Total Records':[len(moon_craters)],'Maximum Value':[moon_craters['diameter'].max()],'Minimum Value':[moon_craters['diameter'].min()],'Order of Magnitude':[len(str(moon_craters['diameter'].max()))-len(str(moon_craters['diameter'].min()))]})
 moon_craters.columns = ['Digits']
 moon_craters['Digits'] = moon_craters['Digits'].apply(lambda x: str(x)[0])
@@ -191,7 +191,7 @@ fibonacci_list['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.
 fibonacci_list['benford count'] = fibonacci_list['benford percentage'].apply(lambda x : (float(x) * sum(fibonacci_list['count']))/100)
 
 # deaths due to natural disasters
-disasters_deaths = pd.read_csv(os.getcwd()+'/assets/datasets/disasters.csv')
+disasters_deaths = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/disasters.csv')
 disasters_deaths_table = pd.DataFrame({'Total Records':[len(disasters_deaths)],'Maximum Value':[disasters_deaths['Deaths'].max()],'Minimum Value':[disasters_deaths['Deaths'].min()],'Order of Magnitude':[len(str(disasters_deaths['Deaths'].max()))-len(str(disasters_deaths['Deaths'].min()))]})
 disasters_deaths = disasters_deaths['Deaths'].dropna().apply(lambda x: str(x)[0]).value_counts().rename('count').rename_axis('Digits').reset_index()
 disasters_deaths = disasters_deaths.sort_values(by='Digits')
@@ -209,7 +209,7 @@ global_diseases['benford count'] = global_diseases['benford percentage'].apply(l
 global_diseases_table = pd.DataFrame({'Total Records':[global_diseases['count'].sum()],'Maximum Value':'NA','Minimum Value':'NA','Order of Magnitude':'6'})
 
 # sunni muslims
-sunni_muslims = pd.read_csv(os.getcwd()+'/assets/datasets/sunni_muslims.csv')
+sunni_muslims = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/sunni_muslims.csv')
 sunni_muslims.drop(sunni_muslims[sunni_muslims['islmsun']==0].index,inplace=True)
 sunni_muslims_table = pd.DataFrame({'Total Records':[len(sunni_muslims)],'Maximum Value':[sunni_muslims['islmsun'].max()],'Minimum Value':'0','Order of Magnitude':[len(str(sunni_muslims['islmsun'].max()))-0]})
 sunni_muslims = sunni_muslims['islmsun'].apply(lambda x: str(x)[0]).value_counts().rename('count').rename_axis('Digits').reset_index()
@@ -219,7 +219,7 @@ sunni_muslims['benford percentage'] = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1
 sunni_muslims['benford count'] = sunni_muslims['benford percentage'].apply(lambda x : (float(x) * sum(sunni_muslims['count']))/100)
 
 # damage due to disasters
-disasters_damage = pd.read_csv(os.getcwd()+'/assets/datasets/disasters.csv')
+disasters_damage = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/disasters.csv')
 disasters_damage_table = pd.DataFrame({'Total Records':[len(disasters_damage)],'Maximum Value':[disasters_damage['Damage'].max()],'Minimum Value':[disasters_damage['Damage'].min()],'Order of Magnitude':[len(str(disasters_damage['Damage'].max()))-len(str(disasters_damage['Damage'].min()))]})
 disasters_damage = disasters_damage['Damage'].dropna().apply(lambda x: str(x)[0]).value_counts().rename('count').rename_axis('Digits').reset_index()
 disasters_damage = disasters_damage.sort_values(by='Digits')
@@ -242,11 +242,11 @@ def onload_benfordfig():
         go.Scatter(x=covid_cases['Digits'], y=covid_cases['benford count'], name="Predicted by<br>Benford's Law",
                    mode="lines+markers", hoverinfo='skip', marker_symbol='circle', marker_size=6,
                    marker_line_width=2, ))
-    fig.update_traces(hovertemplate=None)
     fig.update_layout(yaxis_title='Leading Digit Frequency',
                       xaxis_title="Leading Digits<br><br>Data Source : <a href='https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv'>Covid-19 Data</a>",
                       title='Count of Covid-19 Cases<br>around the World', title_x=0.5, template='plotly_dark',
                       showlegend=True)
+    fig.update_traces(hovertemplate=None)
     fig.update_layout(margin=dict(t=50, b=0, l=20, r=20))
     fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
     fig.update_layout(legend=dict(
@@ -330,7 +330,7 @@ city_area['zipf_dist'] = zipf_dist
 city_area.index = range(1,len(city_area)+1)
 
 # dog victim's age
-dog_attack = pd.read_csv(os.getcwd()+'/assets/datasets/dog_attacks.csv')
+dog_attack = pd.read_csv('https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/dog_attacks.csv')
 dog_attack['age'] = dog_attack['age'].apply(lambda x: None if int(x)>10 else x)
 dog_attack = dog_attack['age'].value_counts().rename('count').rename_axis('age').reset_index()
 dog_attack['percentage'] = dog_attack['count'].apply(lambda x: str(round((x/sum(dog_attack['count']) * 100),2))+"%")
@@ -382,7 +382,7 @@ url2 = "http://www.gutenberg.org/ebooks/{}".format(book_num)
 res2 = requests.get(url2)
 soup2 = BeautifulSoup(res2.content, "html.parser")
 book_title = soup2.find("h1", itemprop="name").text
-book_words = pd.DataFrame(str(soup).split(), columns=['word'])
+book_words = pd.DataFrame(str(soup).lower().split(), columns=['word'])
 book_word_count = len(book_words)
 book_words['word'] = book_words['word'].apply(lambda x: None if x in [",",".","``","''",";","?","--","(",")",":","!",'''"''',"'"] else x)
 book_words.dropna(inplace=True)
@@ -531,6 +531,7 @@ transistor_mp = pd.read_html('https://en.wikipedia.org/wiki/transistor_count')[1
 transistor_mp = transistor_mp.drop(transistor_mp.head(1).index)
 transistor_mp.columns=['Processor','transistor count','Date','Designer','MOS process(nm)']
 transistor_mp.drop(transistor_mp[transistor_mp['transistor count']=='‹See Tfd›?'].index,inplace=True)
+transistor_mp.drop(transistor_mp[transistor_mp['transistor count']=='?'].index,inplace=True)
 transistor_mp['Date'] = transistor_mp['Date'].apply(lambda x: x.split("[")[0])
 transistor_mp['transistor count'] = transistor_mp['transistor count'].apply(lambda x: x.split("[")[0])
 transistor_mp['transistor count'] = transistor_mp['transistor count'].apply(lambda x: x.split("+")[0])
@@ -552,6 +553,7 @@ transistor_gpu['Date'] = pd.to_datetime(transistor_gpu['Date'])
 transistor_ram = pd.read_html('https://en.wikipedia.org/wiki/Transistor_count')[4].drop(['Chip name','MOS process','Area','Ref'],axis=1)
 transistor_ram.columns = ['Capacity (bits)','RAM type','transistor count','Date','Designer']
 transistor_ram.drop(transistor_ram[transistor_ram['transistor count']=='‹See Tfd›?'].index,inplace=True)
+transistor_ram.drop(transistor_ram[transistor_ram['transistor count']=='?'].index,inplace=True)
 transistor_ram['Date'] = transistor_ram['Date'].apply(lambda x: x.split(", ")[1] if "," in x else x)
 transistor_ram['Date'] = transistor_ram['Date'].apply(lambda x: x.split(" ")[1] if " " in x else x)
 transistor_ram['transistor count'].astype(str).astype(np.uint64)
@@ -586,13 +588,60 @@ def onload_moore_graph():
 moore_datasets = {'Number of MOS Transistors on Microprocessor':1,'Number of MOS Transistors on GPU':2,'Number of MOS Transistors on RAM':3,'Number of MOS Transistors on Flash Memory':4}
 
 # stigler df
-stigler_df = pd.read_csv(os.getcwd()+"/assets/datasets/Stigler's law.csv")
+stigler_df = pd.read_csv("https://raw.githubusercontent.com/AtharvaKatre/Numbers-Prophecy/main/assets/datasets/Stigler's%20law.csv")
 
 # -------------------------------------------------DASH APP----------------------------------------------------------------------------------------
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0'}])
 
-app.title = 'Numbers Prophecy'
+app.index_string = '''
+<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <meta name="description" content="An online experiment to demonstrate the biases and predictability of our world">
+        <meta name="keywords" content="numbers, number, prophecy, benford, law, laws, zipf, zipf's law, brevity, brevity law, bode, bode's law, moore, moore's law, Stigler's law of Eponymy, what is random, what is not random, predictability, biases, empirical law, scientific laws, prediction, data sets, natural datasets,">
+        <meta name="author" content="Atharva Katre">
+        <title>{%title%}Numbers Prophecy</title>
+        <script data-ad-client="ca-pub-5006482200117782" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        {%favicon%}
+        {%css%}
+        <style>
+        .coffee-container {
+          position: relative;
+        }
+
+        .coffee-center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        </style>
+    </head>
+    <body>
+        {%app_entry%}
+        <br>
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        <div class="coffee-container">
+        <div class="coffee-center">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="AtharvaKatre" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" data-align='center'></script>
+        </div>
+        </div>
+        <br>
+        <br>
+        </footer>
+    </body>
+</html>
+'''
+
+app.title = ''
+
 
 app.layout = dbc.Container([
     dbc.Row(
@@ -613,14 +662,14 @@ app.layout = dbc.Container([
         )
     ),
     html.Br(),
-    dbc.Row(html.H4(["But the world we observe and experience around us is influenced by our actions and our interactions with it. And studies have shown that human behaviour isn't random. But wait ",html.A("What is Random?",href="https://youtu.be/9rIy0xY99a0",target='_blank',style={'text-decoration':'underline'})," and ",html.A("What is Not Random?",href='https://youtu.be/sMb00lz-IfE',target='_blank',style={'text-decoration':'underline'})],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
-    dbc.Row(html.H4(["Researchers have found that out that our languages, information, technological advancements and even natural phenomena follow obscure patterns."],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
+    dbc.Row(html.H4(["But the world we observe and experience around us is influenced by our actions and our interactions with it. And studies have shown that human behaviour isn't random. But seriously ",html.A("What is Random?",href="https://youtu.be/9rIy0xY99a0",target='_blank',style={'text-decoration':'underline'})," and ",html.A("What is Not Random?",href='https://youtu.be/sMb00lz-IfE',target='_blank',style={'text-decoration':'underline'})],style={'color':'#b4b4b4','textAlign':'left'})),
+    dbc.Row(html.H4(["Researchers have found that out that our languages, information, technological advancements and even natural phenomena follow obscure patterns."],style={'color':'#b4b4b4','textAlign':'left'})),
     html.Br(),
-    dbc.Row(html.H4(["This is an experiment to demonstrate the ",html.Span("biases",style={'color':'white'})," and ",html.Span("predictability",style={'color':'white'})," of our world."],style={'color':'#b4b4b4','padding-left':'10px','textAlign':'left'})),
+    dbc.Row(html.H4(["This is an experiment to demonstrate the ",html.Span("biases",style={'color':'white'})," and ",html.Span("predictability",style={'color':'white'})," of our world."],style={'color':'#b4b4b4','textAlign':'left'})),
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Benford's Law"),style={'font-family':'Times','color':'Yellow','text-decoration':'underline','padding-left':'10px'}),
+    dbc.Row(html.H3("Benford's Law"),style={'font-family':'Times','color':'Yellow','text-decoration':'underline'}),
     html.Br(),
     dbc.Row(html.H5('Imagine a large dataset, say something like a list of every country and its population.'),style={'color':'#b4b4b4','padding-left':'20px','textAlign':'left'}),
     dbc.Table([html.Thead(html.Tr([html.Th("Country"), html.Th("Popultion")]))] + [html.Tbody([
@@ -641,6 +690,7 @@ app.layout = dbc.Container([
                         id='benford dropdown',
                         options=[{'label': key, 'value': value} for key,value in benford_datasets.items()],style={'color':'black','textAlign':'left'},
                         value=1,
+                        searchable=False,
                         clearable=False,
                     ),
                 ],style={'width': '80%', 'display': 'inline-block','padding-left':'20px'}
@@ -668,10 +718,13 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col(
             html.Div([
-                dcc.Graph(
-                    id="benford graph",
-                    figure = onload_benfordfig(),
-                    config = {'displayModeBar': False,'displaylogo': False}
+                dcc.Loading(
+                    children=[dcc.Graph(
+                                id="benford graph",
+                                figure = onload_benfordfig(),
+                                config = {'displaylogo': False}
+                                )
+                            ],color='yellow'
                 )
             ])
         )
@@ -689,7 +742,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Zipf's Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline','padding-left':'10px'}),
+    dbc.Row(html.H3("Zipf's Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline'}),
     html.Br(),
     dbc.Row(html.H5(["Named for linguist George Kingsley Zipf, who around 1935 was the first to draw attention to this phenomenon, the law examines the frequency of words in natural language and how the most common word occurs ",html.Span('twice',style={'color':'white'})," as often as the second most frequent word, ",html.Span('thrice',style={'color':'white'})," as often as the third most frequent word and so on until the least frequent word."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["So the word in the position ,",html.Span('n',style={'color':'white'})," appears ",html.Span("1/n",style={'color':'white'})," times as often as the most frequent one."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -704,6 +757,7 @@ app.layout = dbc.Container([
                             id='zipf dropdown',
                             options=[{'label': key, 'value': value} for key,value in zipf_datasets.items()],style={'color':'black','textAlign':'left'},
                             value=1,
+                            searchable=False,
                             clearable=False,
                         ),
                     ],
@@ -723,11 +777,14 @@ app.layout = dbc.Container([
     dbc.Row([
             dbc.Col(
                 html.Div([
-                    dcc.Graph(
-                        id="zipf graph",
-                        figure = onload_zipffig(),
-                        config = {'displayModeBar': False,'displaylogo': False}
-                    )
+                    dcc.Loading(
+                    children=[dcc.Graph(
+                                id="zipf graph",
+                                figure = onload_zipffig(),
+                                config = {'displaylogo': False}
+                                )
+                            ],color='yellow'
+                )
                 ])
             )
         ], no_gutters=True, justify='center'),
@@ -736,7 +793,7 @@ app.layout = dbc.Container([
     html.Br(),
 
     dbc.Row([
-        html.H5('Try it yourself !',style={'textAlign':'left','padding-left':'20px'})
+        html.H5('Try it yourself!',style={'textAlign':'left','padding-left':'20px'})
         ]),
 
     html.Br(),
@@ -769,8 +826,8 @@ app.layout = dbc.Container([
                children=[dcc.Graph(
                                    id = 'random graph',
                                    figure = {},
-                                   config = {'displayModeBar': False,'displaylogo': False}
-                                )],type='cube',color='yellow'
+                                   config = {'displaylogo': False}
+                                )],type='default',color='yellow'
                )
        ]),
     ], no_gutters=True, justify='center'),
@@ -809,7 +866,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Brevity Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Brevity Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline'}),
     html.Br(),
     dbc.Row(html.H5(["Also called as Zipf's law of abbreviation, it qualitatively states that the ",html.Span('more',style={'color':'white'})," frequently a word is used, the ",html.Span('shorter',style={'color':'white'})," that word tends to be, and vice versa."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["As shown in the graph below a few shorter words are used more often than many other longer words."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -828,11 +885,14 @@ app.layout = dbc.Container([
 
     dbc.Row([
             dbc.Col(
-                    dcc.Graph(
-                        id="brevity graph",
-                        figure = onload_tb_graph(),
-                        config = {'displayModeBar': False,'displaylogo': False}
-                    )
+                    dcc.Loading(
+                    children=[dcc.Graph(
+                                id="brevity graph",
+                                figure = onload_brevity_fig(),
+                                config = {'displaylogo': False}
+                                )
+                            ],color='yellow'
+                )
             )
         ], no_gutters=True, justify='center'),
     html.Br(),
@@ -847,7 +907,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Titius–Bode Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Titius–Bode Law"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline'}),
     html.Br(),
     dbc.Row(html.H5(["The Titius–Bode law, first announced in 1766 by Johann Daniel Titius but was popularized only from 1772 by Johann Elert Bode is a formulaic prediction of spacing between planets in any given solar system."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["The formula suggests that, extending outward, each planet should be approximately ",html.Span("twice",style={'color':'white'})," as far from the Sun as the ",html.Span("one before",style={'color':'white'}),". The hypothesis correctly anticipated the orbits of Ceres in 1801 (in the asteroid belt) and Uranus in 1781, but failed as a predictor of Neptune's orbit in 1846 and that of Pluto, which was regarded as the ninth planet when it was discovered in 1930."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -855,10 +915,13 @@ app.layout = dbc.Container([
     dbc.Row([
             dbc.Col(
                 html.Div([
-                    dcc.Graph(
-                        id="t-b graph",
-                        figure = onload_tb_graph(),
-                        config = {'displayModeBar': False,'displaylogo': False}
+                    dcc.Loading(
+                    children=[dcc.Graph(
+                                id="t-b graph",
+                                figure = onload_tb_graph(),
+                                config = {'displaylogo': False}
+                                )
+                            ],color='yellow'
                     )
                 ])
             )
@@ -875,7 +938,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Moore's Law"),style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px'}),
+    dbc.Row(html.H3("Moore's Law"),style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline'}),
     html.Br(),
     dbc.Row(html.H5(["In 1994 Intel released Intel 4004 is a 4-bit CPU, the first commercially produced microprocessor. It was also the first logic circuit integrated in one chip using MOS (metal–oxide–semiconductor) silicon gate technology. The IC had ", html.Span("2,250",style={'color':'white'})," MOS transistors. Fast forward to 2017 AMD launched EPYC Rome a 64-bit microprocessor with an astonishing ", html.Span("39.5 Billion",style={'color':'white'})," transistors."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["Named after Gordan Moore, co-founder and chairman of Intel Corporation, Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) ", html.Span("doubles",style={'color':'white'})," about every ",html.Span("two",style={'color':'white'})," years."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -890,6 +953,7 @@ app.layout = dbc.Container([
                             id='moore dropdown',
                             options=[{'label': key, 'value': value} for key,value in moore_datasets.items()],style={'color':'black','textAlign':'left'},
                             value=1,
+                            searchable=False,
                             clearable=False,
                         ),
                     ],style={'width': '80%', 'display': 'inline-block','padding-left':'20px'}
@@ -899,11 +963,14 @@ app.layout = dbc.Container([
         dbc.Row([
                     dbc.Col(
                         html.Div([
-                            dcc.Graph(
-                                id="moore graph",
-                                figure = onload_moore_graph(),
-                                config = {'displayModeBar': False,'displaylogo': False}
-                            )
+                            dcc.Loading(
+                                children=[dcc.Graph(
+                                            id="moore graph",
+                                            figure = onload_moore_graph(),
+                                            config = {'displaylogo': False}
+                                            )
+                            ],color='yellow'
+                    )
                         ])
                     )
                 ], no_gutters=True, justify='center'),
@@ -920,7 +987,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    dbc.Row(html.H3("Stigler's law of Eponymy"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'padding-left': '10px','textAlign':'left'}),
+    dbc.Row(html.H3("Stigler's law of Eponymy"), style={'font-family':'Times','color': 'Yellow', 'text-decoration': 'underline', 'textAlign':'left'}),
     html.Br(),
     dbc.Row(html.H5(["This law isn't a scientific discovery or a prediction of any kind but in fact emphasises on human nature and how collaborative and complex the processes of scientific discovery really are."],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
     dbc.Row(html.H5(["Stigler's Law tells us ",html.Span('''"No scientific discovery is named after its original discoverer."''',style={'color':'white'})],style={'color': '#b4b4b4', 'padding-left': '20px', 'textAlign': 'left'})),
@@ -962,7 +1029,7 @@ app.layout = dbc.Container([
     html.Footer([html.Span("Created by ",style={'color':'#b4b4b4'}),html.A("Atharva Katre",href="https://linktr.ee/AtharvaKatre",id="creator",style={'text-decoration':'underline','cursor': 'pointer','color':'white'})]),
     html.Br(),
 
-],style={'textAlign': 'center'}, fluid=True)
+],style={'textAlign': 'center','width':'80%'}, fluid=True)
 
 # benford callback
 @app.callback(
