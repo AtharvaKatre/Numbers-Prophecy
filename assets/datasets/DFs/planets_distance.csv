@@ -1,0 +1,11 @@
+k,Planet,Semimajor axis (AU),T–B rule distance (AU)
+0,Mercury,0.39,0.4
+1,Venus,0.72,0.7
+2,Earth,1.00,1.0
+4,Mars,1.52,1.6
+8,(Ceres),2.77,2.8
+16,Jupiter,5.20,5.2
+32,Saturn,9.55,10.0
+64,Uranus,19.22,19.6
+–,Neptune,30.11,38.8
+128,(Pluto),39.54,77.2

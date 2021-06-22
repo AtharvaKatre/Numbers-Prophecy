@@ -1,0 +1,51 @@
+city,area,zipf_dist
+Chongqing,82403,82403
+Harbin,53068,41201
+Khartoum,22142,27467
+Hangzhou,16596,20600
+Beijing,16411,16480
+Chengdu,14378,13733
+Shenyang,12980,11771
+Tianjin,11920,10300
+Jinan,10244,9155
+Xi'an,10135,8240
+Kinshasa,9965,7491
+Wuhan,8494,6866
+Suzhou,8488,6338
+Guangzhou,7434,5885
+Nanjing,6582,5493
+Shanghai,6341,5150
+Baghdad,5200,4847
+Istanbul,5196,4577
+Foshan,3848,4337
+Karachi,3530,4120
+Cairo,3085,3923
+Lima,2672,3745
+Moscow,2511,3582
+Dongguan,2465,3433
+Tokyo,2191,3296
+Ho Chi Minh City,2061,3169
+Shenzhen,2050,3051
+Riyadh,1913,2942
+Lahore,1772,2841
+Bogotá,1587,2746
+London,1572,2658
+Bangkok,1569,2575
+Houston,1553,2497
+São Paulo,1521,2423
+Mexico City,1485,2354
+Delhi,1484,2288
+Dar es Salaam,1393,2227
+Rio de Janeiro,1221,2168
+Los Angeles,1214,2112
+Hong Kong,1104,2060
+Dallas,882,2009
+New York City,786,1961
+Tehran,751,1916
+Singapore,726,1872
+Bangalore,709,1831
+Jakarta,664,1791
+Hyderabad,650,1753
+Toronto,630,1716
+Madrid,606,1681
+Seoul,605,1648

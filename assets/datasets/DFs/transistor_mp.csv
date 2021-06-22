@@ -1,0 +1,193 @@
+Processor,transistor count,Date,Designer,MOS process(nm)
+Intel 4004 ,2250,1971-01-01,Intel,"10,000 nm"
+TMX 1795 ,3078,1971-01-01,Texas Instruments,?
+Intel 8008 ,3500,1972-01-01,Intel,"10,000 nm"
+NEC μCOM-4 ,2500,1973-01-01,NEC,"7,500 nm[34]"
+Toshiba TLCS-12 ,11000,1973-01-01,Toshiba,"6,000 nm"
+Intel 4040 ,3000,1974-01-01,Intel,"10,000 nm"
+Motorola 6800 ,4100,1974-01-01,Motorola,"6,000 nm"
+Intel 8080 ,6000,1974-01-01,Intel,"6,000 nm"
+TMS 1000 ,8000,1974-01-01,Texas Instruments,"8,000 nm"
+MOS Technology 6502 ,4528,1975-01-01,MOS Technology,"8,000 nm"
+Intersil IM6100 ,4000,1975-01-01,Intersil,?
+CDP 1801 ,5000,1975-01-01,RCA,?
+RCA 1802 ,5000,1976-01-01,RCA,"5,000 nm"
+Zilog Z80 ,8500,1976-01-01,Zilog,"4,000 nm"
+Intel 8085 ,6500,1976-01-01,Intel,"3,000 nm"
+TMS9900 ,8000,1976-01-01,Texas Instruments,?
+Bellmac-8 ,7000,1977-01-01,Bell Labs,"5,000 nm"
+Motorola 6809 ,9000,1978-01-01,Motorola,"5,000 nm"
+Intel 8086 ,29000,1978-01-01,Intel,"3,000 nm"
+Zilog Z8000 ,17500,1979-01-01,Zilog,?
+Intel 8088 ,29000,1979-01-01,Intel,"3,000 nm"
+Motorola 68000 ,68000,1979-01-01,Motorola,"3,500 nm"
+Intel 8051 ,50000,1980-01-01,Intel,?
+WDC 65C02,11500,1981-01-01,WDC,"3,000 nm"
+ROMP ,45000,1981-01-01,IBM,"2,000 nm"
+Intel 80186 ,55000,1982-01-01,Intel,"3,000 nm"
+Intel 80286 ,134000,1982-01-01,Intel,"1,500 nm"
+WDC 65C816 ,22000,1983-01-01,WDC,"3,000 nm[42]"
+NEC V20,63000,1984-01-01,NEC,?
+Motorola 68020 ,190000,1984-01-01,Motorola,"2,000 nm"
+Intel 80386 ,275000,1985-01-01,Intel,"1,500 nm"
+ARM 1 ,25000,1985-01-01,Acorn,"3,000 nm"
+Novix NC4016 ,16000,1985-01-01,Harris Corporation,"3,000 nm[46]"
+SPARC MB86900 ,110000,1986-01-01,Fujitsu,"1,200 nm"
+NEC V60[48] ,375000,1986-01-01,NEC,"1,500 nm"
+ARM 2 ,27000,1986-01-01,Acorn,"2,000 nm"
+Z80000 ,91000,1986-01-01,Zilog,?
+NEC V70[48] ,385000,1987-01-01,NEC,"1,500 nm"
+Hitachi Gmicro/200[50],730000,1987-01-01,Hitachi,"1,000 nm"
+Motorola 68030 ,273000,1987-01-01,Motorola,800 nm
+TI Explorer's 32-bit Lisp machine chip,553000,1987-01-01,Texas Instruments,"2,000 nm[52]"
+DEC WRL MultiTitan,180000,1988-01-01,DEC WRL,"1,500 nm"
+Intel i960 ,250000,1988-01-01,Intel,"1,500 nm[55]"
+Intel i960CA ,600000,1989-01-01,Intel,800 nm
+Intel i860 ,1000000,1989-01-01,Intel,?
+Intel 80486 ,1180235,1989-01-01,Intel,1000 nm
+ARM 3 ,310000,1989-01-01,Acorn,"1,500 nm"
+Motorola 68040 ,1200000,1990-01-01,Motorola,650 nm
+R4000 ,1350000,1991-01-01,MIPS,"1,000 nm"
+ARM 6 ,35000,1991-01-01,ARM,800 nm
+Hitachi SH-1 ,600000,1992-01-01,Hitachi,800 nm
+Intel i960CF ,900000,1992-01-01,Intel,?
+DEC Alpha 21064 ,1680000,1992-01-01,DEC,750 nm
+Hitachi HARP-1 ,2800000,1993-01-01,Hitachi,500 nm
+Pentium ,3100000,1993-01-01,Intel,800 nm
+ARM700 ,578977,1994-01-01,ARM,700 nm
+MuP21 ,7000,1994-01-01,Offete Enterprises,1200 nm
+Motorola 68060 ,2500000,1994-01-01,Motorola,600 nm
+PowerPC 601 ,2800000,1994-01-01,Apple/IBM/Motorola,600 nm
+SA-110 ,2500000,1995-01-01,Acorn/DEC/Apple,350 nm
+Pentium Pro ,5500000,1995-01-01,Intel,500 nm
+AMD K5 ,4300000,1996-01-01,AMD,500 nm
+Hitachi SH-4 ,10000000,1997-01-01,Hitachi,200 nm[67]
+Pentium II Klamath ,7500000,1997-01-01,Intel,350 nm
+AMD K6 ,8800000,1997-01-01,AMD,350 nm
+F21 ,15000,1997-01-01,Offete Enterprises,?
+AVR ,140000,1997-01-01,Nordic VLSI/Atmel,?
+Pentium II Deschutes ,7500000,1998-01-01,Intel,250 nm
+ARM 9TDMI ,111000,1999-01-01,Acorn,350 nm
+Pentium III Katmai ,9500000,1999-01-01,Intel,250 nm
+Emotion Engine ,13500000,1999-01-01,Sony/Toshiba,180 nm[71]
+Pentium II Mobile Dixon ,27400000,1999-01-01,Intel,180 nm
+AMD K6-III ,21300000,1999-01-01,AMD,250 nm
+AMD K7 ,22000000,1999-01-01,AMD,250 nm
+Gekko ,21000000,2000-01-01,IBM/Nintendo,180 nm
+Pentium III Coppermine ,21000000,2000-01-01,Intel,180 nm
+Pentium 4 Willamette ,42000000,2000-01-01,Intel,180 nm
+SPARC64 V ,191000000,2001-01-01,Fujitsu,130 nm[75]
+Pentium III Tualatin ,45000000,2001-01-01,Intel,130 nm
+Pentium 4 Northwood ,55000000,2002-01-01,Intel,130 nm
+Itanium 2 McKinley ,220000000,2002-01-01,Intel,180 nm
+DEC Alpha 21364 ,152000000,2003-01-01,DEC,180 nm
+Barton ,54300000,2003-01-01,AMD,130 nm
+AMD K8 ,105900000,2003-01-01,AMD,130 nm
+Itanium 2 Madison 6M ,410000000,2003-01-01,Intel,130 nm
+Pentium 4 Prescott ,112000000,2004-01-01,Intel,90 nm
+SPARC64 V+ ,400000000,2004-01-01,Fujitsu,90 nm
+Itanium 2 ,592000000,2004-01-01,Intel,130 nm
+Pentium 4 Prescott-2M ,169000000,2005-01-01,Intel,90 nm
+Pentium D Smithfield ,228000000,2005-01-01,Intel,90 nm
+Xenon ,165000000,2005-01-01,IBM,90 nm
+Cell ,250000000,2005-01-01,Sony/IBM/Toshiba,90 nm
+Pentium 4 Cedar Mill ,184000000,2006-01-01,Intel,65 nm
+Pentium D Presler ,362000000,2006-01-01,Intel,65 nm
+Core 2 Duo Conroe ,291000000,2006-01-01,Intel,65 nm
+Dual-core Itanium 2 ,1700000000,2006-01-01,Intel,90 nm
+AMD K10 quad-core 2M L3 ,463000000,2007-01-01,AMD,65 nm
+ARM Cortex-A9 ,26000000,2007-01-01,ARM,45 nm
+Core 2 Duo Wolfdale ,411000000,2007-01-01,Intel,45 nm
+POWER6 ,789000000,2007-01-01,IBM,65 nm
+Core 2 Duo Allendale ,169000000,2007-01-01,Intel,65 nm
+Uniphier,250000000,2007-01-01,Matsushita,45 nm
+SPARC64 VI ,540000000,2007-01-01,Fujitsu,90 nm
+Core 2 Duo Wolfdale 3M ,230000000,2008-01-01,Intel,45 nm
+Core i7 ,731000000,2008-01-01,Intel,45 nm
+AMD K10 quad-core 6M L3 ,758000000,2008-01-01,AMD,45 nm
+Atom ,47000000,2008-01-01,Intel,45 nm
+SPARC64 VII ,600000000,2008-01-01,Fujitsu,65 nm
+Six-core Xeon 7400 ,1900000000,2008-01-01,Intel,45 nm
+Six-core Opteron 2400 ,904000000,2009-01-01,AMD,45 nm
+SPARC64 VIIIfx ,760000000,2009-01-01,Fujitsu,45 nm
+SPARC T3 ,1000000000,2010-01-01,Sun/Oracle,40 nm
+Six-core Core i7 ,1170000000,2010-01-01,Intel,32 nm
+POWER7 32M L3 ,1200000000,2010-01-01,IBM,45 nm
+Quad-core z196[86] ,1400000000,2010-01-01,IBM,45 nm
+Quad-core Itanium Tukwila ,2000000000,2010-01-01,Intel,65 nm
+Xeon Nehalem-EX ,2300000000,2010-01-01,Intel,45 nm
+SPARC64 IXfx ,1870000000,2011-01-01,Fujitsu,40 nm
+Quad-core + GPU Core i7 ,1160000000,2011-01-01,Intel,32 nm
+Six-core Core i7/8-core Xeon E5 ,2270000000,2011-01-01,Intel,32 nm
+Xeon Westmere-EX ,2600000000,2011-01-01,Intel,32 nm
+"Atom ""Medfield"" ",432000000,2012-01-01,Intel,32 nm
+SPARC64 X ,2990000000,2012-01-01,Fujitsu,28 nm
+AMD Bulldozer ,1200000000,2012-01-01,AMD,32 nm
+Quad-core + GPU AMD Trinity ,1303000000,2012-01-01,AMD,32 nm
+Quad-core + GPU Core i7 Ivy Bridge ,1400000000,2012-01-01,Intel,22 nm
+POWER7+ ,2100000000,2012-01-01,IBM,32 nm
+Six-core zEC12 ,2750000000,2012-01-01,IBM,32 nm
+Itanium Poulson ,3100000000,2012-01-01,Intel,32 nm
+Xeon Phi ,5000000000,2012-01-01,Intel,22 nm
+Apple A7 ,1000000000,2013-01-01,Apple,28 nm
+Six-core Core i7 Ivy Bridge E ,1860000000,2013-01-01,Intel,22 nm
+POWER8 ,4200000000,2013-01-01,IBM,22 nm
+Xbox One main SoC ,5000000000,2013-01-01,Microsoft/AMD,28 nm
+Quad-core + GPU Core i7 Haswell ,1400000000,2014-01-01,Intel,22 nm
+Apple A8 ,2000000000,2014-01-01,Apple,20 nm
+Core i7 Haswell-E ,2600000000,2014-01-01,Intel,22 nm
+Apple A8X ,3000000000,2014-01-01,Apple,20 nm
+Xeon Ivy Bridge-EX ,4310000000,2014-01-01,Intel,22 nm
+Xeon Haswell-E5 ,5560000000,2014-01-01,Intel,22 nm
+Quad-core + GPU GT2 Core i7 Skylake K ,1750000000,2015-01-01,Intel,14 nm
+Dual-core + GPU Iris Core i7 Broadwell-U ,1900000000,2015-01-01,Intel,14 nm
+Apple A9 ,2000000000,2015-01-01,Apple,14 nm(Samsung)
+Apple A9 ,2000000000,2015-01-01,Apple,16 nm(TSMC)
+Apple A9X ,3000000000,2015-01-01,Apple,16 nm
+IBM z13 ,3990000000,2015-01-01,IBM,22 nm
+IBM z13 Storage Controller,7100000000,2015-01-01,IBM,22 nm
+SPARC M7 ,10000000000,2015-01-01,Oracle,20 nm
+Qualcomm Snapdragon 835 ,3000000000,2016-01-01,Qualcomm,10 nm
+Core i7 Broadwell-E ,3200000000,2016-01-01,Intel,14 nm
+Apple A10 Fusion ,3300000000,2016-01-01,Apple,16 nm
+HiSilicon Kirin 960 ,4000000000,2016-01-01,Huawei,16 nm
+Xeon Broadwell-E5 ,7200000000,2016-01-01,Intel,14 nm
+Xeon Phi ,8000000000,2016-01-01,Intel,14 nm
+Zip CPU ,1286,2016-01-01,Gisselquist Technology,?
+Qualcomm Snapdragon 845 ,5300000000,2017-01-01,Qualcomm,10 nm
+Qualcomm Snapdragon 850 ,5300000000,2017-01-01,Qualcomm,10 nm
+Apple A11 Bionic ,4300000000,2017-01-01,Apple,10 nm
+Zeppelin SoC Ryzen ,4800000000,2017-01-01,AMD,14 nm
+Ryzen 5 1600 Ryzen ,4800000000,2017-01-01,AMD,14 nm
+Ryzen 5 1600 X Ryzen ,4800000000,2017-01-01,AMD,14 nm
+IBM z14 ,6100000000,2017-01-01,IBM,14 nm
+IBM z14 Storage Controller ,9700000000,2017-01-01,IBM,14 nm
+HiSilicon Kirin 970 ,5500000000,2017-01-01,Huawei,10 nm
+Xbox One X ,7000000000,2017-01-01,Microsoft/AMD,16 nm
+Xeon Platinum 8180 ,8000000000,2017-01-01,Intel,14 nm
+POWER9 ,8000000000,2017-01-01,IBM,14 nm
+Freedom U500 Base Platform Chip ,250000000,2017-01-01,SiFive,28 nm
+SPARC64 XII ,5450000000,2017-01-01,Fujitsu,20 nm
+Apple A10X Fusion ,4300000000,2017-01-01,Apple,10 nm
+Centriq 2400 ,18000000000,2017-01-01,Qualcomm,10 nm
+AMD Epyc ,19200000000,2017-01-01,AMD,14 nm
+HiSilicon Kirin 710 ,5500000000,2018-01-01,Huawei,12 nm
+Apple A12 Bionic ,6900000000,2018-01-01,Apple,7 nm
+HiSilicon Kirin 980 ,6900000000,2018-01-01,Huawei,7 nm
+Qualcomm Snapdragon 8cx / SCX8180 ,8500000000,2018-01-01,Qualcomm,7 nm
+Qualcomm Snapdragon 855 ,6700000000,2019-01-01,Qualcomm,7 nm
+Qualcomm Snapdragon 865 ,10300000000,2020-01-01,Qualcomm,7 nm
+Apple A12X Bionic ,10000000000,2018-01-01,Apple,7 nm
+Fujitsu A64FX ,8786000000,2018-01-01,Fujitsu,7 nm
+Tegra Xavier SoC ,9000000000,2018-01-01,Nvidia,12 nm
+AMD Ryzen 7 3700X ,5990000000,2019-01-01,AMD,7 & 12 nm (TSMC)
+HiSilicon Kirin 990 4G,8000000000,2019-01-01,Huawei,7 nm
+Apple A13 ,8500000000,2019-01-01,Apple,7 nm
+AMD Ryzen 9 3900X ,9890000000,2019-01-01,AMD,7 & 12 nm (TSMC)
+HiSilicon Kirin 990 5G,10300000000,2019-01-01,Huawei,7 nm
+AWS Graviton2 ,30000000000,2019-01-01,Amazon,7 nm
+AMD Epyc Rome ,39540000000,2019-01-01,AMD,7 & 12 nm (TSMC)
+TI Jacinto TDA4VM ,3500000000,2020-01-01,Texas Instruments,16 nm
+Apple A14 Bionic ,11800000000,2020-01-01,Apple,5 nm
+Apple M1 ,16000000000,2020-01-01,Apple,5 nm
+HiSilicon Kirin 9000,15300000000,2020-01-01,Huawei,5 nm
