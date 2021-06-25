@@ -663,7 +663,7 @@ app.layout = dbc.Container([
     ),
     html.Br(),
     dbc.Row(html.H4(["But the world we observe and experience around us is influenced by our actions and our interactions with it. And studies have shown that human behaviour isn't random. But seriously ",html.A("What is Random?",href="https://youtu.be/9rIy0xY99a0",target='_blank',style={'text-decoration':'underline'})," and ",html.A("What is Not Random?",href='https://youtu.be/sMb00lz-IfE',target='_blank',style={'text-decoration':'underline'})],style={'color':'#b4b4b4','textAlign':'left'})),
-    dbc.Row(html.H4(["Researchers have found that out that our languages, information, technological advancements and even natural phenomena follow obscure patterns."],style={'color':'#b4b4b4','textAlign':'left'})),
+    dbc.Row(html.H4(["Researchers have found that out that our languages, information, technological advancements and even natural phenomena follow obscure patterns. These are termed as ", html.A("Empirical Statistical Laws",href="https://en.wikipedia.org/wiki/Empirical_statistical_laws", target='_blank',style={'text-decoration':'underline'}), "."],style={'color':'#b4b4b4','textAlign':'left'})),
     html.Br(),
     dbc.Row(html.H4(["This is an experiment to demonstrate the ",html.Span("biases",style={'color':'white'})," and ",html.Span("predictability",style={'color':'white'})," of our world."],style={'color':'#b4b4b4','textAlign':'left'})),
     html.Br(),
