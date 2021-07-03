@@ -999,20 +999,24 @@ app.layout = dbc.Container([
             html.H5("Below table list examples of Stigler's Law",style={'textAlign':'left'})
         )
     ),
-    dash_table.DataTable(
-            data=stigler_df.to_dict('records'),
-            columns=[{'id': c, 'name': c} for c in stigler_df.columns],
-            page_size=10,
-            style_header={'backgroundColor': 'rgb(30, 30, 30)','fontWeight':'bold','textAlign':'center'},
-            style_cell={
-                'whiteSpace': 'normal',
-                'height': 'auto',
-                'width': 'auto',
-                'textAlign': 'left',
-                'backgroundColor': 'rgb(50, 50, 50)',
-                'color': '#b4b4b4'
-            },
-        ),
+    dbc.Row(
+        dbc.Col(
+            dash_table.DataTable(
+                        data=stigler_df.to_dict('records'),
+                        columns=[{'id': c, 'name': c} for c in stigler_df.columns],
+                        page_size=10,
+                        style_header={'backgroundColor': 'rgb(30, 30, 30)','fontWeight':'bold','textAlign':'center'},
+                        style_cell={
+                            'whiteSpace': 'normal',
+                            'height': 'auto',
+                            'width': 'auto',
+                            'textAlign': 'left',
+                            'backgroundColor': 'rgb(50, 50, 50)',
+                            'color': '#b4b4b4'
+                        },
+                    )
+        )
+    ),
     html.Br(),
     html.Br(),
     dbc.Row([
