@@ -651,7 +651,7 @@ app.layout = dbc.Container([
                 ),
     ),
     dbc.Row(
-        dbc.Col(html.P(["by ",html.A("Atharva Katre",href="https://linktr.ee/AtharvaKatre",style={'color':'white','text-decoration':'underline'})],className='text-center',style={'color':'#b4b4b4'}))
+        dbc.Col(html.P(["by ",html.A("Atharva Katre",href="https://www.linkedin.com/in/atharvakatre",style={'color':'white','text-decoration':'underline'})],className='text-center',style={'color':'#b4b4b4'}))
         ),
     html.Br(),
     html.Br(),
@@ -1030,7 +1030,7 @@ app.layout = dbc.Container([
     html.Br(),
     html.Br(),
     html.Br(),
-    html.Footer([html.Span("Created by ",style={'color':'#b4b4b4'}),html.A("Atharva Katre",href="https://linktr.ee/AtharvaKatre",id="creator",style={'text-decoration':'underline','cursor': 'pointer','color':'white'})]),
+    html.Footer([html.Span("Created by ",style={'color':'#b4b4b4'}),html.A("Atharva Katre",href="https://www.linkedin.com/in/atharvakatre",id="creator",style={'text-decoration':'underline','cursor': 'pointer','color':'white'})]),
     html.Br(),
 
 ],style={'textAlign': 'center','width':'80%'}, fluid=True)
